@@ -181,7 +181,7 @@ h6{
     text-align: center;
 }
 
-.pubblicità span{
+.pubblicità span img{
     display: none;
 }
 
@@ -213,10 +213,10 @@ footer{
     li{
         width: 33%;
     }
-    .pubblicità span{
+    .pubblicità span img{
         display: inline;
+        width: 100%;
     }
-    
     .btn{
         width: 19%;
     }
