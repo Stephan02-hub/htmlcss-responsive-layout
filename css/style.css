@@ -87,11 +87,14 @@ h3 {
     BUTTONS
 ------------------*/
 .btn {
-    background-color: rgb(167, 1, 1);
+    background-color: rgb(255, 255, 255);
     font-family: inherit;
     border: none;
     padding: 6px 12px;
     cursor: pointer;
+    border-radius: 10px;
+    text-shadow: 1px 1px 8px #333;
+
 }
 
 .btn-large {
@@ -162,7 +165,10 @@ li{
     padding-bottom: 40px;
     background-color: white;
 }
-
+.logo{
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
 .logo span {
     display: none;
 }
@@ -175,7 +181,9 @@ h6{
     text-align: center;
 }
 
-
+.pubblicità span{
+    display: none;
+}
 
 /*----------------
     FOOTER
@@ -200,19 +208,32 @@ footer{
     }
     ul{
         display: flex;
+        flex-wrap: wrap;
+    }
+    li{
+        width: 33%;
+    }
+    .pubblicità span{
+        display: inline;
+    }
+    
+    .btn{
+        width: 19%;
     }
 }
 
 /* Desktop da 992px a infinito */
 @media screen and (min-width: 992px) {
     .recipe-intro .col-video {
-        width: 70%;
+        width: 160%;
+        height: 100%;
     }
     .recipe-intro .col-details {
         width: 30%;
     }
     .container .row {
         display: flex;
+        flex-wrap: nowrap;
     }
     .logo span {
         display: inline;
@@ -222,4 +243,16 @@ footer{
         justify-content: space-between;
         display: flex;
     }
+    ul{
+        flex-wrap: nowrap;
+        display: block;
+    }
+    .in-breve{
+        padding-left: 30px;
+        width: 100%;
+        padding-bottom: 40px;
+        background-color: white;
+    }
+
+    
 }
